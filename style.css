@@ -1,3 +1,73 @@
-*{
-    background-color: #1a1b1f;;
+* {
+    background-color: #1a1b1f;
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
 }
+
+.header {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: #242528;
+}
+nav{
+    text-align: center;
+}
+
+.prueba{
+    color: white;
+    margin-top: 10px;
+    border: none;
+    background-color: #242528;
+}
+
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.character-border {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    border: 3px ridge #dfea14;
+    outline: none;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image:url("Aatrox_0.jpg");
+  }
+  
+  .character-border:hover {
+
+    background-image: url("Aatrox_1.jpg");
+  }
+/*  
+  .character-border::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+  }
+  
+
+  .character-border:hover::before, .character-border:hover::after {
+    transform: scale(0)
+  }
+  
+  .character-border:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+  */
+
+  nav{
+    height: 60px;
+    text-align: center;
+  }
