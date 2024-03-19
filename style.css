@@ -1,73 +1,169 @@
 * {
-    background-color: #1a1b1f;
-    margin: 0;
-    padding: 0;
-box-sizing: border-box;
+  background-color: #1a1b1f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-    padding: 30px;
-    text-align: center;
-    color: white;
-    background: #242528;
-}
-nav{
-    text-align: center;
+  font-family: sans-serif;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: #242528;
 }
 
-.prueba{
-    color: white;
-    margin-top: 10px;
-    border: none;
-    background-color: #242528;
+.header_letter {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  background-color: #242528;
+  cursor: pointer;
 }
 
-img{
-    max-width: 100px;
-    max-height: 100px;
-}
 .character-border {
-    width: 380px;
-    height: 380px;
-    position: relative;
-    border: 3px ridge #dfea14;
-    outline: none;
-    color: white;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    background-image:url("Aatrox_0.jpg");
+  width: 380px;
+  height: 380px;
+  position: relative;
+  border: 3px ridge #dfea14;
+  outline: none;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.character-border::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+}
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#242528;
+}
+footer.p{
+  
+}
+
+  #aatrox {
+    background-image: url("img/Aatrox_0.jpg");
   }
   
-  .character-border:hover {
-
-    background-image: url("Aatrox_1.jpg");
-  }
-/*  
-  .character-border::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    transition: 0.5s;
+  #aatrox:hover {
+    background-image: url("img/Aatrox_1.jpg");
   }
   
-
-  .character-border:hover::before, .character-border:hover::after {
-    transform: scale(0)
+  #ahri {
+    background-image: url("img/Ahri_0.jpg");
   }
   
-  .character-border:hover {
-    box-shadow: inset 0px 0px 25px #1479EA;
+  #ahri:hover {
+    background-image: url("img/Ahri_1.jpg");
   }
-  */
+  
+  #akali {
+    background-image: url("img/Akali_0.jpg");
+  }
+  
+  #akali:hover {
+    background-image: url("img/Akali_1.jpg");
+  }
+  
+  #akshan {
+    background-image: url("img/Akshan_0.jpg");
+  }
+  
+  #akshan:hover {
+    background-image: url("img/Akshan_1.jpg");
+  }
+  
+  #alistar {
+    background-image: url("img/Alistar_0.jpg");
+  }
+  
+  #alistar:hover {
+    background-image: url("img/Alistar_1.jpg");
+  }
+  
+  #amumu {
+    background-image: url("img/Amumu_0.jpg");
+  }
+  
+  #amumu:hover {
+    background-image: url("img/Amumu_1.jpg");
+  }
+  
+  #anivia {
+    background-image: url("img/Anivia_0.jpg");
+  }
+  
+  #anivia:hover {
+    background-image: url("img/Anivia_1.jpg");
+  }
+  
+  #annie {
+    background-image: url("img/Annie_0.jpg");
+  }
+  
+  #annie:hover {
+    background-image: url("img/Annie_1.jpg");
+  }
+  
+  #aphelios {
+    background-image: url("img/Aphelios_0.jpg");
+  }
+  
+  #aphelios:hover {
+    background-image: url("img/Aphelios_1.jpg");
+  }
+  
+  #ashe {
+    background-image: url("img/Ashe_0.jpg");
+  }
+  
+  #ashe:hover {
+    background-image: url("img/Ashe_1.jpg");
+  }
+  
+  #aurelionsol {
+    background-image: url("img/AurelionSol_0.jpg");
+  }
+  
+  #aurelionsol:hover {
+    background-image: url("img/AurelionSol_1.jpg");
+  }
+  
+  #azir {
+    background-image: url("img/Azir_0.jpg");
+  }
+  
+  #azir:hover {
+    background-image: url("img/Azir_1.jpg");
+  }
 
-  nav{
-    height: 60px;
-    text-align: center;
-  }
+nav {
+  height: 60px;
+  text-align: center;
+}
+
+.box_campeones {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-top: 5px solid  #242528;
+  position: absolute;
+}
