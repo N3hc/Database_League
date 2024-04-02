@@ -37,6 +37,7 @@
   font-weight: bold;
   cursor: pointer;
 }
+
 .character-border::before {
   content: "";
   transform-origin: center;
@@ -47,113 +48,23 @@
   height: 40%;
   transition: 0.5s;
 }
+
 footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
-  background:#242528;
-}
-footer.p{
-  
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 2.5em;
+  width: 100%;
+  background: #242528;
+  text-align: center;
+  padding: 8px;
 }
 
-  #aatrox {
-    background-image: url("img/Aatrox_0.jpg");
-  }
-  
-  #aatrox:hover {
-    background-image: url("img/Aatrox_1.jpg");
-  }
-  
-  #ahri {
-    background-image: url("img/Ahri_0.jpg");
-  }
-  
-  #ahri:hover {
-    background-image: url("img/Ahri_1.jpg");
-  }
-  
-  #akali {
-    background-image: url("img/Akali_0.jpg");
-  }
-  
-  #akali:hover {
-    background-image: url("img/Akali_1.jpg");
-  }
-  
-  #akshan {
-    background-image: url("img/Akshan_0.jpg");
-  }
-  
-  #akshan:hover {
-    background-image: url("img/Akshan_1.jpg");
-  }
-  
-  #alistar {
-    background-image: url("img/Alistar_0.jpg");
-  }
-  
-  #alistar:hover {
-    background-image: url("img/Alistar_1.jpg");
-  }
-  
-  #amumu {
-    background-image: url("img/Amumu_0.jpg");
-  }
-  
-  #amumu:hover {
-    background-image: url("img/Amumu_1.jpg");
-  }
-  
-  #anivia {
-    background-image: url("img/Anivia_0.jpg");
-  }
-  
-  #anivia:hover {
-    background-image: url("img/Anivia_1.jpg");
-  }
-  
-  #annie {
-    background-image: url("img/Annie_0.jpg");
-  }
-  
-  #annie:hover {
-    background-image: url("img/Annie_1.jpg");
-  }
-  
-  #aphelios {
-    background-image: url("img/Aphelios_0.jpg");
-  }
-  
-  #aphelios:hover {
-    background-image: url("img/Aphelios_1.jpg");
-  }
-  
-  #ashe {
-    background-image: url("img/Ashe_0.jpg");
-  }
-  
-  #ashe:hover {
-    background-image: url("img/Ashe_1.jpg");
-  }
-  
-  #aurelionsol {
-    background-image: url("img/AurelionSol_0.jpg");
-  }
-  
-  #aurelionsol:hover {
-    background-image: url("img/AurelionSol_1.jpg");
-  }
-  
-  #azir {
-    background-image: url("img/Azir_0.jpg");
-  }
-  
-  #azir:hover {
-    background-image: url("img/Azir_1.jpg");
-  }
+#i {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background: #242528;
+}
 
 nav {
   height: 60px;
@@ -164,6 +75,1334 @@ nav {
   padding: 0;
   margin: 0;
   text-align: center;
-  border-top: 5px solid  #242528;
+  border-top: 5px solid #242528;
   position: absolute;
+}
+
+#aatrox {
+  background-image: url("img/Aatrox_0.jpg");
+}
+
+#aatrox:hover {
+  background-image: url("img/Aatrox_1.jpg");
+}
+
+#ahri {
+  background-image: url("img/Ahri_0.jpg");
+}
+
+#ahri:hover {
+  background-image: url("img/Ahri_1.jpg");
+}
+
+#akali {
+  background-image: url("img/Akali_0.jpg");
+}
+
+#akali:hover {
+  background-image: url("img/Akali_1.jpg");
+}
+
+#alistar {
+  background-image: url("img/Alistar_0.jpg");
+}
+
+#alistar:hover {
+  background-image: url("img/Alistar_1.jpg");
+}
+
+#amumu {
+  background-image: url("img/Amumu_0.jpg");
+}
+
+#amumu:hover {
+  background-image: url("img/Amumu_1.jpg");
+}
+
+#anivia {
+  background-image: url("img/Anivia_0.jpg");
+}
+
+#anivia:hover {
+  background-image: url("img/Anivia_1.jpg");
+}
+
+#annie {
+  background-image: url("img/Annie_0.jpg");
+}
+
+#annie:hover {
+  background-image: url("img/Annie_1.jpg");
+}
+
+#aphelios {
+  background-image: url("img/Aphelios_0.jpg");
+}
+
+#aphelios:hover {
+  background-image: url("img/Aphelios_1.jpg");
+}
+
+#ashe {
+  background-image: url("img/Ashe_0.jpg");
+}
+
+#ashe:hover {
+  background-image: url("img/Ashe_1.jpg");
+}
+
+#aurelionsol {
+  background-image: url("img/AurelionSol_0.jpg");
+}
+
+#aurelionsol:hover {
+  background-image: url("img/AurelionSol_1.jpg");
+}
+
+#azir {
+  background-image: url("img/Azir_0.jpg");
+}
+
+#azir:hover {
+  background-image: url("img/Azir_1.jpg");
+}
+
+#bard {
+  background-image: url("img/Bard_0.jpg");
+}
+
+#bard:hover {
+  background-image: url("img/Bard_1.jpg");
+}
+
+#blitzcrank {
+  background-image: url("img/Blitzcrank_0.jpg");
+}
+
+#blitzcrank:hover {
+  background-image: url("img/Blitzcrank_1.jpg");
+}
+
+#brand {
+  background-image: url("img/Brand_0.jpg");
+}
+
+#brand:hover {
+  background-image: url("img/Brand_1.jpg");
+}
+
+#braum {
+  background-image: url("img/Braum_0.jpg");
+}
+
+#braum:hover {
+  background-image: url("img/Braum_1.jpg");
+}
+
+#caitlyn {
+  background-image: url("img/Caitlyn_0.jpg");
+}
+
+#caitlyn:hover {
+  background-image: url("img/Caitlyn_1.jpg");
+}
+
+#camille {
+  background-image: url("img/Camille_0.jpg");
+}
+
+#camille:hover {
+  background-image: url("img/Camille_1.jpg");
+}
+
+#cassiopeia {
+  background-image: url("img/Cassiopeia_0.jpg");
+}
+
+#cassiopeia:hover {
+  background-image: url("img/Cassiopeia_1.jpg");
+}
+
+#chogath {
+  background-image: url("img/ChoGath_0.jpg");
+}
+
+#chogath:hover {
+  background-image: url("img/ChoGath_1.jpg");
+}
+
+#corki {
+  background-image: url("img/Corki_0.jpg");
+}
+
+#corki:hover {
+  background-image: url("img/Corki_1.jpg");
+}
+
+#darius {
+  background-image: url("img/Darius_0.jpg");
+}
+
+#darius:hover {
+  background-image: url("img/Darius_1.jpg");
+}
+
+#diana {
+  background-image: url("img/Diana_0.jpg");
+}
+
+#diana:hover {
+  background-image: url("img/Diana_1.jpg");
+}
+
+#drmundo {
+  background-image: url("img/DrMundo_0.jpg");
+}
+
+#drmundo:hover {
+  background-image: url("img/DrMundo_1.jpg");
+}
+
+#draven {
+  background-image: url("img/Draven_0.jpg");
+}
+
+#draven:hover {
+  background-image: url("img/Draven_1.jpg");
+}
+
+#ekko {
+  background-image: url("img/Ekko_0.jpg");
+}
+
+#ekko:hover {
+  background-image: url("img/Ekko_1.jpg");
+}
+
+#elise {
+  background-image: url("img/Elise_0.jpg");
+}
+
+#elise:hover {
+  background-image: url("img/Elise_1.jpg");
+}
+
+#evelynn {
+  background-image: url("img/Evelynn_0.jpg");
+}
+
+#evelynn:hover {
+  background-image: url("img/Evelynn_1.jpg");
+}
+
+#ezreal {
+  background-image: url("img/Ezreal_0.jpg");
+}
+
+#ezreal:hover {
+  background-image: url("img/Ezreal_1.jpg");
+}
+
+#fiddlesticks {
+  background-image: url("img/Fiddlesticks_0.jpg");
+}
+
+#fiddlesticks:hover {
+  background-image: url("img/Fiddlesticks_1.jpg");
+}
+
+#fiora {
+  background-image: url("img/Fiora_0.jpg");
+}
+
+#fiora:hover {
+  background-image: url("img/Fiora_1.jpg");
+}
+
+#fizz {
+  background-image: url("img/Fizz_0.jpg");
+}
+
+#fizz:hover {
+  background-image: url("img/Fizz_1.jpg");
+}
+
+#galio {
+  background-image: url("img/Galio_0.jpg");
+}
+
+#galio:hover {
+  background-image: url("img/Galio_1.jpg");
+}
+
+#gangplank {
+  background-image: url("img/Gangplank_0.jpg");
+}
+
+#gangplank:hover {
+  background-image: url("img/Gangplank_1.jpg");
+}
+
+#garen {
+  background-image: url("img/Garen_0.jpg");
+}
+
+#garen:hover {
+  background-image: url("img/Garen_1.jpg");
+}
+
+#gnar {
+  background-image: url("img/Gnar_0.jpg");
+}
+
+#gnar:hover {
+  background-image: url("img/Gnar_1.jpg");
+}
+
+#gragas {
+  background-image: url("img/Gragas_0.jpg");
+}
+
+#gragas:hover {
+  background-image: url("img/Gragas_1.jpg");
+}
+
+#graves {
+  background-image: url("img/Graves_0.jpg");
+}
+
+#graves:hover {
+  background-image: url("img/Graves_1.jpg");
+}
+
+#gwen {
+  background-image: url("img/Gwen_0.jpg");
+}
+
+#gwen:hover {
+  background-image: url("img/Gwen_1.jpg");
+}
+
+#hecarim {
+  background-image: url("img/Hecarim_0.jpg");
+}
+
+#hecarim:hover {
+  background-image: url("img/Hecarim_1.jpg");
+}
+
+#heimerdinger {
+  background-image: url("img/Heimerdinger_0.jpg");
+}
+
+#heimerdinger:hover {
+  background-image: url("img/Heimerdinger_1.jpg");
+}
+
+#illaoi {
+  background-image: url("img/Illaoi_0.jpg");
+}
+
+#illaoi:hover {
+  background-image: url("img/Illaoi_1.jpg");
+}
+
+#irelia {
+  background-image: url("img/Irelia_0.jpg");
+}
+
+#irelia:hover {
+  background-image: url("img/Irelia_1.jpg");
+}
+
+#ivern {
+  background-image: url("img/Ivern_0.jpg");
+}
+
+#ivern:hover {
+  background-image: url("img/Ivern_1.jpg");
+}
+
+#janna {
+  background-image: url("img/Janna_0.jpg");
+}
+
+#janna:hover {
+  background-image: url("img/Janna_1.jpg");
+}
+
+#jarvaniv {
+  background-image: url("img/JarvanIV_0.jpg");
+}
+
+#jarvaniv:hover {
+  background-image: url("img/JarvanIV_1.jpg");
+}
+
+#jax {
+  background-image: url("img/Jax_0.jpg");
+}
+
+#jax:hover {
+  background-image: url("img/Jax_1.jpg");
+}
+
+#jayce {
+  background-image: url("img/Jayce_0.jpg");
+}
+
+#jayce:hover {
+  background-image: url("img/Jayce_1.jpg");
+}
+
+#jhin {
+  background-image: url("img/Jhin_0.jpg");
+}
+
+#jhin:hover {
+  background-image: url("img/Jhin_1.jpg");
+}
+
+#jinx {
+  background-image: url("img/Jinx_0.jpg");
+}
+
+#jinx:hover {
+  background-image: url("img/Jinx_1.jpg");
+}
+
+#kaisa {
+  background-image: url("img/Kaisa_0.jpg");
+}
+
+#kaisa:hover {
+  background-image: url("img/Kaisa_1.jpg");
+}
+
+#kalista {
+  background-image: url("img/Kalista_0.jpg");
+}
+
+#kalista:hover {
+  background-image: url("img/Kalista_1.jpg");
+}
+
+#karma {
+  background-image: url("img/Karma_0.jpg");
+}
+
+#karma:hover {
+  background-image: url("img/Karma_1.jpg");
+}
+
+#karthus {
+  background-image: url("img/Karthus_0.jpg");
+}
+
+#karthus:hover {
+  background-image: url("img/Karthus_1.jpg");
+}
+
+#kassadin {
+  background-image: url("img/Kassadin_0.jpg");
+}
+
+#kassadin:hover {
+  background-image: url("img/Kassadin_1.jpg");
+}
+
+#katarina {
+  background-image: url("img/Katarina_0.jpg");
+}
+
+#katarina:hover {
+  background-image: url("img/Katarina_1.jpg");
+}
+
+#kayle {
+  background-image: url("img/Kayle_0.jpg");
+}
+
+#kayle:hover {
+  background-image: url("img/Kayle_1.jpg");
+}
+
+#kayn {
+  background-image: url("img/Kayn_0.jpg");
+}
+
+#kayn:hover {
+  background-image: url("img/Kayn_1.jpg");
+}
+
+#kennen {
+  background-image: url("img/Kennen_0.jpg");
+}
+
+#kennen:hover {
+  background-image: url("img/Kennen_1.jpg");
+}
+
+#khazix {
+  background-image: url("img/KhaZix_0.jpg");
+}
+
+#khazix:hover {
+  background-image: url("img/KhaZix_1.jpg");
+}
+
+#kindred {
+  background-image: url("img/Kindred_0.jpg");
+}
+
+#kindred:hover {
+  background-image: url("img/Kindred_1.jpg");
+}
+
+#kled {
+  background-image: url("img/Kled_0.jpg");
+}
+
+#kled:hover {
+  background-image: url("img/Kled_1.jpg");
+}
+
+#kogmaw {
+  background-image: url("img/KogMaw_0.jpg");
+}
+
+#kogmaw:hover {
+  background-image: url("img/KogMaw_1.jpg");
+}
+
+#leblanc {
+  background-image: url("img/LeBlanc_0.jpg");
+}
+
+#leblanc:hover {
+  background-image: url("img/LeBlanc_1.jpg");
+}
+
+#leesin {
+  background-image: url("img/LeeSin_0.jpg");
+}
+
+#leesin:hover {
+  background-image: url("img/LeeSin_1.jpg");
+}
+
+#leona {
+  background-image: url("img/Leona_0.jpg");
+}
+
+#leona:hover {
+  background-image: url("img/Leona_1.jpg");
+}
+
+#lillia {
+  background-image: url("img/Lillia_0.jpg");
+}
+
+#lillia:hover {
+  background-image: url("img/Lillia_1.jpg");
+}
+
+#lissandra {
+  background-image: url("img/Lissandra_0.jpg");
+}
+
+#lissandra:hover {
+  background-image: url("img/Lissandra_1.jpg");
+}
+
+#lucian {
+  background-image: url("img/Lucian_0.jpg");
+}
+
+#lucian:hover {
+  background-image: url("img/Lucian_1.jpg");
+}
+
+#lulu {
+  background-image: url("img/Lulu_0.jpg");
+}
+
+#lulu:hover {
+  background-image: url("img/Lulu_1.jpg");
+}
+
+#lux {
+  background-image: url("img/Lux_0.jpg");
+}
+
+#lux:hover {
+  background-image: url("img/Lux_1.jpg");
+}
+
+#malphite {
+  background-image: url("img/Malphite_0.jpg");
+}
+
+#malphite:hover {
+  background-image: url("img/Malphite_1.jpg");
+}
+
+#malzahar {
+  background-image: url("img/Malzahar_0.jpg");
+}
+
+#malzahar:hover {
+  background-image: url("img/Malzahar_1.jpg");
+}
+
+#maokai {
+  background-image: url("img/Maokai_0.jpg");
+}
+
+#maokai:hover {
+  background-image: url("img/Maokai_1.jpg");
+}
+
+#masteryi {
+  background-image: url("img/MasterYi_0.jpg");
+}
+
+#masteryi:hover {
+  background-image: url("img/MasterYi_1.jpg");
+}
+
+#missfortune {
+  background-image: url("img/MissFortune_0.jpg");
+}
+
+#missfortune:hover {
+  background-image: url("img/MissFortune_1.jpg");
+}
+
+#mordekaiser {
+  background-image: url("img/Mordekaiser_0.jpg");
+}
+
+#mordekaiser:hover {
+  background-image: url("img/Mordekaiser_1.jpg");
+}
+
+#morgana {
+  background-image: url("img/Morgana_0.jpg");
+}
+
+#morgana:hover {
+  background-image: url("img/Morgana_1.jpg");
+}
+
+#nami {
+  background-image: url("img/Nami_0.jpg");
+}
+
+#nami:hover {
+  background-image: url("img/Nami_1.jpg");
+}
+
+#nasus {
+  background-image: url("img/Nasus_0.jpg");
+}
+
+#nasus:hover {
+  background-image: url("img/Nasus_1.jpg");
+}
+
+#nautilus {
+  background-image: url("img/Nautilus_0.jpg");
+}
+
+#nautilus:hover {
+  background-image: url("img/Nautilus_1.jpg");
+}
+
+#neeko {
+  background-image: url("img/Neeko_0.jpg");
+}
+
+#neeko:hover {
+  background-image: url("img/Neeko_1.jpg");
+}
+
+#nidalee {
+  background-image: url("img/Nidalee_0.jpg");
+}
+
+#nidalee:hover {
+  background-image: url("img/Nidalee_1.jpg");
+}
+
+#nocturne {
+  background-image: url("img/Nocturne_0.jpg");
+}
+
+#nocturne:hover {
+  background-image: url("img/Nocturne_1.jpg");
+}
+
+#nilah {
+  background-image: url("img/Nilah_0.jpg");
+}
+
+#nilah:hover {
+  background-image: url("img/Nilah_1.jpg");
+}
+
+#renata {
+  background-image: url("img/Renata_0.jpg");
+}
+
+#renata:hover {
+  background-image: url("img/Renata_1.jpg");
+}
+
+#nunu {
+  background-image: url("img/Nunu_0.jpg");
+}
+
+#nunu:hover {
+  background-image: url("img/Nunu_1.jpg");
+}
+
+#olaf {
+  background-image: url("img/Olaf_0.jpg");
+}
+
+#olaf:hover {
+  background-image: url("img/Olaf_1.jpg");
+}
+
+#orianna {
+  background-image: url("img/Orianna_0.jpg");
+}
+
+#orianna:hover {
+  background-image: url("img/Orianna_1.jpg");
+}
+
+#ornn {
+  background-image: url("img/Ornn_0.jpg");
+}
+
+#ornn:hover {
+  background-image: url("img/Ornn_1.jpg");
+}
+
+#pantheon {
+  background-image: url("img/Pantheon_0.jpg");
+}
+
+#pantheon:hover {
+  background-image: url("img/Pantheon_1.jpg");
+}
+
+#poppy {
+  background-image: url("img/Poppy_0.jpg");
+}
+
+#poppy:hover {
+  background-image: url("img/Poppy_1.jpg");
+}
+
+#pyke {
+  background-image: url("img/Pyke_0.jpg");
+}
+
+#pyke:hover {
+  background-image: url("img/Pyke_1.jpg");
+}
+
+#qiyana {
+  background-image: url("img/Qiyana_0.jpg");
+}
+
+#qiyana:hover {
+  background-image: url("img/Qiyana_1.jpg");
+}
+
+#quinn {
+  background-image: url("img/Quinn_0.jpg");
+}
+
+#quinn:hover {
+  background-image: url("img/Quinn_1.jpg");
+}
+
+#rakan {
+  background-image: url("img/Rakan_0.jpg");
+}
+
+#rakan:hover {
+  background-image: url("img/Rakan_1.jpg");
+}
+
+#rammus {
+  background-image: url("img/Rammus_0.jpg");
+}
+
+#rammus:hover {
+  background-image: url("img/Rammus_1.jpg");
+}
+
+#reksai {
+  background-image: url("img/RekSai_0.jpg");
+}
+
+#reksai:hover {
+  background-image: url("img/RekSai_1.jpg");
+}
+
+#rell {
+  background-image: url("img/Rell_0.jpg");
+}
+
+#rell:hover {
+  background-image: url("img/Rell_1.jpg");
+}
+
+#renekton {
+  background-image: url("img/Renekton_0.jpg");
+}
+
+#renekton:hover {
+  background-image: url("img/Renekton_1.jpg");
+}
+
+#rengar {
+  background-image: url("img/Rengar_0.jpg");
+}
+
+#rengar:hover {
+  background-image: url("img/Rengar_1.jpg");
+}
+
+#riven {
+  background-image: url("img/Riven_0.jpg");
+}
+
+#riven:hover {
+  background-image: url("img/Riven_1.jpg");
+}
+
+#rumble {
+  background-image: url("img/Rumble_0.jpg");
+}
+
+#rumble:hover {
+  background-image: url("img/Rumble_1.jpg");
+}
+
+#ryze {
+  background-image: url("img/Ryze_0.jpg");
+}
+
+#ryze:hover {
+  background-image: url("img/Ryze_1.jpg");
+}
+
+#samira {
+  background-image: url("img/Samira_0.jpg");
+}
+
+#samira:hover {
+  background-image: url("img/Samira_1.jpg");
+}
+
+#sejuani {
+  background-image: url("img/Sejuani_0.jpg");
+}
+
+#sejuani:hover {
+  background-image: url("img/Sejuani_1.jpg");
+}
+
+#senna {
+  background-image: url("img/Senna_0.jpg");
+}
+
+#senna:hover {
+  background-image: url("img/Senna_1.jpg");
+}
+
+#seraphine {
+  background-image: url("img/Seraphine_0.jpg");
+}
+
+#seraphine:hover {
+  background-image: url("img/Seraphine_1.jpg");
+}
+
+#sett {
+  background-image: url("img/Sett_0.jpg");
+}
+
+#sett:hover {
+  background-image: url("img/Sett_1.jpg");
+}
+
+#shaco {
+  background-image: url("img/Shaco_0.jpg");
+}
+
+#shaco:hover {
+  background-image: url("img/Shaco_1.jpg");
+}
+
+#shen {
+  background-image: url("img/Shen_0.jpg");
+}
+
+#shen:hover {
+  background-image: url("img/Shen_1.jpg");
+}
+
+#shyvana {
+  background-image: url("img/Shyvana_0.jpg");
+}
+
+#shyvana:hover {
+  background-image: url("img/Shyvana_1.jpg");
+}
+
+#singed {
+  background-image: url("img/Singed_0.jpg");
+}
+
+#singed:hover {
+  background-image: url("img/Singed_1.jpg");
+}
+
+#sion {
+  background-image: url("img/Sion_0.jpg");
+}
+
+#sion:hover {
+  background-image: url("img/Sion_1.jpg");
+}
+
+#sivir {
+  background-image: url("img/Sivir_0.jpg");
+}
+
+#sivir:hover {
+  background-image: url("img/Sivir_1.jpg");
+}
+
+#skarner {
+  background-image: url("img/Skarner_0.jpg");
+}
+
+#skarner:hover {
+  background-image: url("img/Skarner_1.jpg");
+}
+
+#sona {
+  background-image: url("img/Sona_0.jpg");
+}
+
+#sona:hover {
+  background-image: url("img/Sona_1.jpg");
+}
+
+#soraka {
+  background-image: url("img/Soraka_0.jpg");
+}
+
+#soraka:hover {
+  background-image: url("img/Soraka_1.jpg");
+}
+
+#swain {
+  background-image: url("img/Swain_0.jpg");
+}
+
+#swain:hover {
+  background-image: url("img/Swain_1.jpg");
+}
+
+#sylas {
+  background-image: url("img/Sylas_0.jpg");
+}
+
+#sylas:hover {
+  background-image: url("img/Sylas_1.jpg");
+}
+
+#syndra {
+  background-image: url("img/Syndra_0.jpg");
+}
+
+#syndra:hover {
+  background-image: url("img/Syndra_1.jpg");
+}
+
+#tahmkench {
+  background-image: url("img/TahmKench_0.jpg");
+}
+
+#tahmkench:hover {
+  background-image: url("img/TahmKench_1.jpg");
+}
+
+#taliyah {
+  background-image: url("img/Taliyah_0.jpg");
+}
+
+#taliyah:hover {
+  background-image: url("img/Taliyah_1.jpg");
+}
+
+#talon {
+  background-image: url("img/Talon_0.jpg");
+}
+
+#talon:hover {
+  background-image: url("img/Talon_1.jpg");
+}
+
+#taric {
+  background-image: url("img/Taric_0.jpg");
+}
+
+#taric:hover {
+  background-image: url("img/Taric_1.jpg");
+}
+
+#teemo {
+  background-image: url("img/Teemo_0.jpg");
+}
+
+#teemo:hover {
+  background-image: url("img/Teemo_1.jpg");
+}
+
+#thresh {
+  background-image: url("img/Thresh_0.jpg");
+}
+
+#thresh:hover {
+  background-image: url("img/Thresh_1.jpg");
+}
+
+#tristana {
+  background-image: url("img/Tristana_0.jpg");
+}
+
+#tristana:hover {
+  background-image: url("img/Tristana_1.jpg");
+}
+
+#trundle {
+  background-image: url("img/Trundle_0.jpg");
+}
+
+#trundle:hover {
+  background-image: url("img/Trundle_1.jpg");
+}
+
+#tryndamere {
+  background-image: url("img/Tryndamere_0.jpg");
+}
+
+#tryndamere:hover {
+  background-image: url("img/Tryndamere_1.jpg");
+}
+
+#twistedfate {
+  background-image: url("img/TwistedFate_0.jpg");
+}
+
+#twistedfate:hover {
+  background-image: url("img/TwistedFate_1.jpg");
+}
+
+#twitch {
+  background-image: url("img/Twitch_0.jpg");
+}
+
+#twitch:hover {
+  background-image: url("img/Twitch_1.jpg");
+}
+
+#udyr {
+  background-image: url("img/Udyr_0.jpg");
+}
+
+#udyr:hover {
+  background-image: url("img/Udyr_1.jpg");
+}
+
+#urgot {
+  background-image: url("img/Urgot_0.jpg");
+}
+
+#urgot:hover {
+  background-image: url("img/Urgot_1.jpg");
+}
+
+#varus {
+  background-image: url("img/Varus_0.jpg");
+}
+
+#varus:hover {
+  background-image: url("img/Varus_1.jpg");
+}
+
+#vayne {
+  background-image: url("img/Vayne_0.jpg");
+}
+
+#vayne:hover {
+  background-image: url("img/Vayne_1.jpg");
+}
+
+#veigar {
+  background-image: url("img/Veigar_0.jpg");
+}
+
+#veigar:hover {
+  background-image: url("img/Veigar_1.jpg");
+}
+
+#velkoz {
+  background-image: url("img/VelKoz_0.jpg");
+}
+
+#velkoz:hover {
+  background-image: url("img/VelKoz_1.jpg");
+}
+
+#vi {
+  background-image: url("img/Vi_0.jpg");
+}
+
+#vi:hover {
+  background-image: url("img/Vi_1.jpg");
+}
+
+#viego {
+  background-image: url("img/Viego_0.jpg");
+}
+
+#viego:hover {
+  background-image: url("img/Viego_1.jpg");
+}
+
+#viktor {
+  background-image: url("img/Viktor_0.jpg");
+}
+
+#viktor:hover {
+  background-image: url("img/Viktor_1.jpg");
+}
+
+#vladimir {
+  background-image: url("img/Vladimir_0.jpg");
+}
+
+#vladimir:hover {
+  background-image: url("img/Vladimir_1.jpg");
+}
+
+#volibear {
+  background-image: url("img/Volibear_0.jpg");
+}
+
+#volibear:hover {
+  background-image: url("img/Volibear_1.jpg");
+}
+
+#warwick {
+  background-image: url("img/Warwick_0.jpg");
+}
+
+#warwick:hover {
+  background-image: url("img/Warwick_1.jpg");
+}
+
+#wukong {
+  background-image: url("img/MonkeyKing_0.jpg");
+}
+
+#wukong:hover {
+  background-image: url("img/MonkeyKing_1.jpg");
+}
+
+#xayah {
+  background-image: url("img/Xayah_0.jpg");
+}
+
+#xayah:hover {
+  background-image: url("img/Xayah_1.jpg");
+}
+
+#xerath {
+  background-image: url("img/Xerath_0.jpg");
+}
+
+#xerath:hover {
+  background-image: url("img/Xerath_1.jpg");
+}
+
+#xinzhao {
+  background-image: url("img/XinZhao_0.jpg");
+}
+
+#xinzhao:hover {
+  background-image: url("img/XinZhao_1.jpg");
+}
+
+#yasuo {
+  background-image: url("img/Yasuo_0.jpg");
+}
+
+#yasuo:hover {
+  background-image: url("img/Yasuo_1.jpg");
+}
+
+#yone {
+  background-image: url("img/Yone_0.jpg");
+}
+
+#yone:hover {
+  background-image: url("img/Yone_1.jpg");
+}
+
+#yorick {
+  background-image: url("img/Yorick_0.jpg");
+}
+
+#yorick:hover {
+  background-image: url("img/Yorick_1.jpg");
+}
+
+#yuumi {
+  background-image: url("img/Yuumi_0.jpg");
+}
+
+#yuumi:hover {
+  background-image: url("img/Yuumi_1.jpg");
+}
+
+#zac {
+  background-image: url("img/Zac_0.jpg");
+}
+
+#zac:hover {
+  background-image: url("img/Zac_1.jpg");
+}
+
+#zed {
+  background-image: url("img/Zed_0.jpg");
+}
+
+#zed:hover {
+  background-image: url("img/Zed_1.jpg");
+}
+
+#ziggs {
+  background-image: url("img/Ziggs_0.jpg");
+}
+
+#ziggs:hover {
+  background-image: url("img/Ziggs_1.jpg");
+}
+
+#zilean {
+  background-image: url("img/Zilean_0.jpg");
+}
+
+#zilean:hover {
+  background-image: url("img/Zilean_1.jpg");
+}
+
+#zoe {
+  background-image: url("img/Zoe_0.jpg");
+}
+
+#zoe:hover {
+  background-image: url("img/Zoe_1.jpg");
+}
+
+#zyra {
+  background-image: url("img/Zyra_0.jpg");
+}
+
+#zyra:hover {
+  background-image: url("img/Zyra_1.jpg");
+}
+
+#zery {
+  background-image: url("img/Zeri_0.jpg");
+}
+
+#zery:hover {
+  background-image: url("img/Zeri_1.jpg");
+}
+
+#vex {
+  background-image: url("img/Vex_0.jpg");
+}
+
+#vex:hover {
+  background-image: url("img/Vex_1.jpg");
+}
+
+#smolder {
+  background-image: url("img/Smolder_0.jpg");
+}
+
+#smolder:hover {
+  background-image: url("img/Smolder_1.jpg");
+}
+
+#briar {
+  background-image: url("img/Briar_0.jpg");
+}
+
+#briar:hover {
+  background-image: url("img/Briar_1.jpg");
+}
+
+#nafiri {
+  background-image: url("img/Naafiri_0.jpg");
+}
+
+#nafiri:hover {
+  background-image: url("img/Naafiri_1.jpg");
+}
+
+#milio {
+  background-image: url("img/Milio_0.jpg");
+}
+
+#milio:hover {
+  background-image: url("img/Milio_1.jpg");
+}
+
+#ksante {
+  background-image: url("img/KSante_0.jpg");
+}
+
+#ksante:hover {
+  background-image: url("img/KSante_1.jpg");
+}
+
+#hwei {
+  background-image: url("img/hwei_0.jpg");
+}
+
+#hwei:hover {
+  background-image: url("img/hwei_1.jpg");
+}
+
+#belvez {
+  background-image: url("img/belveth_0.jpg");
+}
+
+#belvez:hover {
+  background-image: url("img/belveth_1.jpg");
 }
