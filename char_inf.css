@@ -1,0 +1,25 @@
+* {
+    background-color: #1a1b1f;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-family: sans-serif;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: #242528;
+  }
+  
+  .header_letter {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    background-color: #242528;
+    cursor: pointer;
+  }

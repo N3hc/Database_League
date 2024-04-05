@@ -1,5 +1,3 @@
-const Select = document.getElementById('aatrox');
-
-Select.addEventListener('click', function(event) {
+function char_inf() {
     window.location.href = 'char_inf.html';
-});
+};
