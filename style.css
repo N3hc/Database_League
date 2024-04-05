@@ -28,7 +28,7 @@
   width: 190px;
   height: 190px;
   position: relative;
-  border: 3px ridge #dfea14;
+  border: 3px ridge #070707;
   outline: none;
   color: white;
   transition: 1s;
@@ -39,8 +39,12 @@
   background-size: cover;
   background-position: center;
   margin: 1%;
+  opacity: 50%;
 }
-
+.character-border:hover{
+  opacity: 100%;
+  border-color: aliceblue;
+}
 .character-border::before {
   content: "";
   transform-origin: center;
@@ -50,7 +54,6 @@
   width: 95%;
   height: 40%;
   transition: 0.5s;
-
 }
 
 footer {
