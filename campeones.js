@@ -10,3 +10,6 @@ function campeones() {
 function invocadores() {
     window.location.href = '';
 };
+function splashArts() {
+    window.location.href = 'splashArts.html';
+};
