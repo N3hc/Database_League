@@ -1,6 +1,6 @@
 // Ejemplo de solicitud a la API de League of Legends usando fetch
 const apiKey = 'RGAPI-c4485210-e709-494c-8510-5eeaadd422cc';
-const summonerName = 'ARDUI1';
+const summonerName = '';
 const region = 'euw1'; // Código de región para Europa Occidental
 
 // URL para obtener datos del invocador
@@ -19,6 +19,9 @@ fetch(summonerUrl)
             <h1>Información del Invocador:</h1>
             <p>Nombre: ${data.name}</p>
             <p>Nivel: ${data.summonerLevel}</p>
+            <p>Puuid: ${data.puuid}</p>
+
+            <img src="profileicon/${data.profileIconId}.png"></img>
         `;
         
         // Agrega el contenido al elemento #app en el HTML
