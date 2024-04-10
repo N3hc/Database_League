@@ -44,6 +44,16 @@
 .character-border:hover{
   opacity: 100%;
   border-color: aliceblue;
+  width: 290px;
+  height: 290px;
+  position: relative;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 .character-border::before {
   content: "";
@@ -84,7 +94,11 @@ nav {
   text-align: center;
   border-top: 5px solid #242528;
   position: absolute;
+}
 
+.spacer {
+  visibility: hidden;
+  height: 100%;
 }
 
 #imgresize{
