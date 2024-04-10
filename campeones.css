@@ -5,25 +5,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  font-family: sans-serif;
-  padding: 30px;
-  text-align: center;
-  color: white;
-  background: #242528;
-}
-
-.header_letter {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 30px;
-  color: white;
-  margin-top: 10px;
-  border: none;
-  background-color: #242528;
-  cursor: pointer;
-}
-
 .character-border {
   width: 190px;
   height: 190px;
@@ -92,9 +73,14 @@ nav {
   padding: 0;
   margin: 0;
   text-align: center;
-  border-top: 5px solid #242528;
+
   position: absolute;
 }
+
+.filtos{
+  text-align: center;
+}
+
 
 .spacer {
   visibility: hidden;
