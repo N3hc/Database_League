@@ -1,10 +1,3 @@
-* {
-  background-color: #1a1b1f;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .character-border {
   width: 190px;
   height: 190px;
@@ -46,24 +39,6 @@
   height: 40%;
   transition: 0.5s;
 }
-
-footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 2.5em;
-  width: 100%;
-  background: #242528;
-  text-align: center;
-  padding: 8px;
-}
-
-#i {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-  background: #242528;
-}
-
 nav {
   height: 60px;
   text-align: center;
@@ -81,11 +56,31 @@ nav {
   text-align: center;
 }
 
-
 .spacer {
   visibility: hidden;
   height: 100%;
 }
+
+.box {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 12px;
+  width: 130px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.header-list {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
 
 #imgresize{
   background-size: cover;
@@ -448,11 +443,11 @@ nav {
   background-image: url("img/Janna_1.jpg");
 }
 
-#jarvaniv {
+#jarvanIV {
   background-image: url("img/JarvanIV_0.jpg");
 }
 
-#jarvaniv:hover {
+#jarvanIV:hover {
   background-image: url("img/JarvanIV_1.jpg");
 }
 

@@ -7,9 +7,11 @@
     <meta name="description" content="League of Legends Database">
     <meta name="author" content="Chenping Guo, Ardui Pulido">
     <link rel="stylesheet" href="campeones.css">
-    <link rel="stylesheet" href="campeones1.css">
+    <link rel="stylesheet" href="default.css">
     <link rel="shortcut icon" href="img/NashorTooth.jpg">
+    <script src="Jquery.js"></script>
     <script src="campeones.js"></script>
+    <script src="default.js"></script>
 </head>
 
 
@@ -22,12 +24,13 @@
     </header>
     <br>
     <div class="header-list">
-        <button class="box" id="filtro1">Fighter</button>
-        <button class="box" id="filtro2">Tank</button>
-        <button class="box" id="filtro3">Suport</button>
-        <button class="box" id="filtro4">Mage</button>
-        <button class="box" id="filtro5">Assasin</button>
-        <button class="box" id="filtro6">Marksman</button>
+        <button class="box" category="Reset">Reset</button>
+        <button class="box" category="Fighter">Fighter</button>
+        <button class="box" category="Tank">Tank</button>
+        <button class="box" category="Support">Suport</button>
+        <button class="box" category="Mage">Mage</button>
+        <button class="box" category="Assasin">Assasin</button>
+        <button class="box" category="Marksman">Marksman</button>
     </div>
     <div class="box_campeones">
         <button class="character-border" category="Fighter  Assasin" id="aatrox" onclick="char_inf()" ></button>
@@ -77,7 +80,7 @@
         <button class="character-border" category="Fighter" id="irelia" onclick="char_inf()"></button>
         <button class="character-border" category="Mage Support" id="ivern" onclick="char_inf()"></button>
         <button class="character-border" category="Support" id="janna" onclick="char_inf()"></button>
-        <button class="character-border" category="Fighter Tank Assasin" id="jarvaniv" onclick="char_inf()"></button>
+        <button class="character-border" category="Fighter Tank Assasin" id="jarvanIV" onclick="char_inf()"></button>
         <button class="character-border" category="Fighter Marksman" id="jax" onclick="char_inf()"></button>
         <button class="character-border" category="Assasin" id="jayce" onclick="char_inf()"></button>
         <button class="character-border" category="Assasin Marksman" id="jhin" onclick="char_inf()"></button>
