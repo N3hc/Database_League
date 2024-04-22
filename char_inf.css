@@ -1,0 +1,40 @@
+#imagenCampeon{
+
+}
+#imagenQ{
+    position: absolute;
+    top: 200px; left: 550px;
+}
+#imagenW{
+    position: absolute;
+    top: 200px; left: 620px;
+}
+#imagenE{
+    position: absolute;
+    top: 200px; left: 690px;
+}
+#imagenR{
+    position: absolute;
+    top: 200px; left: 760px;
+}
+#imagenPassive{
+    position: absolute;
+    top: 200px; left: 480px;
+}
+
+#imagenesCampeon{
+padding: 2rem 1rem;
+margin-bottom: 2rem;
+background-color: #28292b;
+border-radius: 0.3rem;
+margin-left: 7%;
+margin-right: 7%;
+margin-top: 3%;
+}
+#paneltexto{
+
+}
+
+button{
+    border: none;
+}

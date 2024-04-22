@@ -9,8 +9,7 @@ const url = 'championFull.json';
 
 // Suponiendo que tienes una función para obtener el nombre del campeón de otra página
 const nombreCampeon = palabraCapitalizada;
-document.write(nombreCampeon);
-document.write('loading/' + nombreCampeon + '_0.png')
+
 
 // Función para cargar el archivo JSON
 function cargarJSON(url) {
