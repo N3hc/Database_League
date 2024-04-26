@@ -1,39 +1,67 @@
-#imagenCampeon{
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "izquiera derecha";
+    padding: 2rem 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: aqua;
+    border-radius: 1%;
+}
+.fondo{
+    background: #242528;
+}
+.imagenCampeonGrid {
+    grid-area: izquiera;
+    display: grid;
+    grid-template-columns: 64px 308px 64px;
+    grid-template-rows: 64px 560px 64px;
+}
+
+.imagenCampeon {
+    grid-area: Centro;
 
 }
-#imagenQ{
-    position: absolute;
-    top: 200px; left: 550px;
-}
-#imagenW{
-    position: absolute;
-    top: 200px; left: 620px;
-}
-#imagenE{
-    position: absolute;
-    top: 200px; left: 690px;
-}
-#imagenR{
-    position: absolute;
-    top: 200px; left: 760px;
-}
-#imagenPassive{
-    position: absolute;
-    top: 200px; left: 480px;
-}
 
-#imagenesCampeon{
-padding: 2rem 1rem;
-margin-bottom: 2rem;
-background-color: #28292b;
-border-radius: 0.3rem;
-margin-left: 7%;
-margin-right: 7%;
-margin-top: 3%;
-}
-#paneltexto{
+.ImagenSpellGrid {
+    grid-area: derecha;
+    display: grid;
+    grid-template-columns: 20px 64px 20px 64px 20px 64px 20px 64px 20px 64px 20px;
+    grid-template-rows: 100px 64px 50px 200px 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
 }
+
+.imagenPassive {
+    grid-area: passiva;
+}
+
+.imagenQ {
+    grid-area: q;
+}
+
+.imagenW {
+    grid-area: w;
+}
+
+.imagenE {
+    grid-area: e;
+}
+
+.imagenR {
+    grid-area: r;
+
+}
+
+.Texto {
+
+}
+
 
 button{
     border: none;

@@ -1,15 +1,15 @@
     // Obtener el ID del botón desde la URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var idBoton = urlParams.get('id');
+//    var urlParams = new URLSearchParams(window.location.search);
+//  var idBoton = urlParams.get('id');
 
     // Mostrar el ID del botón
-  let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
+//  let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
     // URL del archivo JSON
-const url = 'championFull.json';
+//const url = 'championFull.json';
 
 // Suponiendo que tienes una función para obtener el nombre del campeón de otra página
-const nombreCampeon = palabraCapitalizada;
-
+//const nombreCampeon = palabraCapitalizada;
+const nombreCampeon = "Aatrox";
 
 // Función para cargar el archivo JSON
 function cargarJSON(url) {
