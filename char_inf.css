@@ -15,12 +15,7 @@
 .fondo{
     background: #242528;
 }
-.imagenCampeonGrid {
-    grid-area: izquiera;
-    display: grid;
-    grid-template-columns: 64px 308px 64px;
-    grid-template-rows: 64px 560px 64px;
-}
+
 
 .imagenCampeon {
     grid-area: Centro;

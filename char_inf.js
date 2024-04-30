@@ -5,7 +5,7 @@
     // Mostrar el ID del botón
 //  let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
     // URL del archivo JSON
-//const url = 'championFull.json';
+const url = 'championFull.json';
 
 // Suponiendo que tienes una función para obtener el nombre del campeón de otra página
 //const nombreCampeon = palabraCapitalizada;
@@ -49,7 +49,7 @@ function obtenerImagenesPorNombre(nombreCampeon) {
                 const campeonPassiveImageUrl = imgPasivecampeon;
 
                 // Insertar imágenes en las cajas HTML
-                document.getElementById('imagenCampeon').innerHTML = `<img src="${campeonImageUrl}" alt="${nombreCampeon}">`;
+                document.querySelector('.imagenCampeon').style.backgroundImage = `url('${campeonImageUrl}')`;
                 document.getElementById('imagenQ').innerHTML = `<img src="${campeonQImageUrl}" alt="${campeon.spells[0].name}">`;
                 document.getElementById('imagenW').innerHTML = `<img src="${campeonWImageUrl}" alt="${campeon.spells[1].name}">`;
                 document.getElementById('imagenE').innerHTML = `<img src="${campeonEImageUrl}" alt="${campeon.spells[2].name}">`;

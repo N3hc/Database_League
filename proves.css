@@ -1,8 +1,49 @@
-.container {
-    padding: 1000px 1000px;
+.container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas con igual ancho */
+    grid-template-rows: repeat(10, 1fr); /* 10 filas con igual altura */
+    gap: 1px; /* Espacio entre celdas */
+    padding: 2rem 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #242528;
+    margin-top: 3%;
+}
+/* Estilos de las celdas */
+.grid-container > div {
+    background-color: #ccc; /* Color de fondo */
+    border: 1px solid #999; /* Borde */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Alineación de texto */
+  }
+
+.imagenCampeon{
+    margin-left: 5%;
+    background-color: #ccc; /* Color de fondo */
+    border: 1px solid #999; /* Borde */
+    padding: 280px 155px; /* Espacio interno */
+    text-align: center; /* Alineación de texto */
+}
+
+.iconHability{
+    display: flex; /* Utilizamos flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio disponible entre las imágenes */
+}
+
+#imagenPassive{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 64px;
+    height: 64px;
     margin-left: 10%;
-    margin-right: 10%;
-    border-color: aqua;
-    border-radius: 1%;
-    background-color: rgb(49, 6, 6);
+    border: none; 
+    padding: 0;
+}
+#imagenQ{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 64px;
+    height: 64px;
+    margin-left: 10%;
+    /* padding: 64px; */
 }
