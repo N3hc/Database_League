@@ -1,15 +1,20 @@
-    // Obtener el ID del botón desde la URL
-//    var urlParams = new URLSearchParams(window.location.search);
-//  var idBoton = urlParams.get('id');
+// Obtener el ID del botón desde la URL
+var urlParams = new URLSearchParams(window.location.search);
+var idBoton = urlParams.get('id');
 
-    // Mostrar el ID del botón
-//  let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
-    // URL del archivo JSON
+// Mostrar el ID del botón
+let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
+// URL del archivo JSON
 const url = 'championFull.json';
 
 // Suponiendo que tienes una función para obtener el nombre del campeón de otra página
-//const nombreCampeon = palabraCapitalizada;
-const nombreCampeon = "Aatrox";
+const nombreCampeon = palabraCapitalizada;
+const habilidadQ = "";
+const habilidadW = "";
+const habilidadE = "";
+const habilidadR = "";
+const habilidadPassiva = "";
+const lore = "";
 
 // Función para cargar el archivo JSON
 function cargarJSON(url) {
@@ -29,7 +34,7 @@ function cargarJSON(url) {
 }
 
 // Función para obtener y mostrar imágenes basadas en el nombre del campeón
-function obtenerImagenesPorNombre(nombreCampeon) {
+function obtenerInformacionCampeon(nombreCampeon) {
     cargarJSON(url)
         .then(data => {
             const campeon = data.data[nombreCampeon];
@@ -63,5 +68,48 @@ function obtenerImagenesPorNombre(nombreCampeon) {
             console.error('Hubo un problema al obtener las imágenes:', error);
         });
 }
+
+function obtenerInformacionHabilidad(campeonID, habilidadID) {
+    cargarJSON(url)
+        .then(data => {
+            const campeon = data.data[campeonID];
+            if (campeon) {
+                const habilidad = campeon.spells.find(habilidad => habilidad.id === campeonID + habilidadID);
+                if (habilidad) {
+                    document.getElementById("nombreHabilidad").innerText = habilidad.name;
+                    document.getElementById("descripcionHabilidad").innerText = habilidad.description;
+                } else {
+                    console.log('No se encontró información para el ID de la habilidad:', campeonID + habilidadID);
+                }
+            } else {
+                console.log('No se encontró información para el ID del campeón:', campeonID);
+            }
+        })
+        .catch(error => {
+            console.error('Hubo un problema al obtener la información de la habilidad:', error);
+        });
+}
+
+        // Asociar la función al evento clic de los botones de habilidades
+        document.getElementById("imagenPassive").addEventListener("click", function() {
+            obtenerInformacionHabilidad(palabraCapitalizada, "P");
+        });
+
+        document.getElementById("imagenQ").addEventListener("click", function() {
+            obtenerInformacionHabilidad(palabraCapitalizada, "Q");
+        });
+
+        document.getElementById("imagenW").addEventListener("click", function() {
+            obtenerInformacionHabilidad(palabraCapitalizada, "W");
+        });
+
+        document.getElementById("imagenE").addEventListener("click", function() {
+            obtenerInformacionHabilidad(palabraCapitalizada, "E");
+        });
+
+        document.getElementById("imagenR").addEventListener("click", function() {
+            obtenerInformacionHabilidad(palabraCapitalizada, "R");
+        });
+
 // Llamar a la función para obtener y mostrar imágenes
-obtenerImagenesPorNombre(nombreCampeon);
+obtenerInformacionCampeon(nombreCampeon);
