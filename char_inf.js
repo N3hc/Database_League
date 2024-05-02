@@ -9,12 +9,6 @@ const url = 'championFull.json';
 
 // Suponiendo que tienes una función para obtener el nombre del campeón de otra página
 const nombreCampeon = palabraCapitalizada;
-const habilidadQ = "";
-const habilidadW = "";
-const habilidadE = "";
-const habilidadR = "";
-const habilidadPassiva = "";
-const lore = "";
 
 // Función para cargar el archivo JSON
 function cargarJSON(url) {
@@ -69,47 +63,59 @@ function obtenerInformacionCampeon(nombreCampeon) {
         });
 }
 
-function obtenerInformacionHabilidad(campeonID, habilidadID) {
+function obtenerTextoCampeones(palabraCapitalizada) {
     cargarJSON(url)
-        .then(data => {
-            const campeon = data.data[campeonID];
-            if (campeon) {
-                const habilidad = campeon.spells.find(habilidad => habilidad.id === campeonID + habilidadID);
-                if (habilidad) {
-                    document.getElementById("nombreHabilidad").innerText = habilidad.name;
-                    document.getElementById("descripcionHabilidad").innerText = habilidad.description;
-                } else {
-                    console.log('No se encontró información para el ID de la habilidad:', campeonID + habilidadID);
-                }
-            } else {
-                console.log('No se encontró información para el ID del campeón:', campeonID);
-            }
-        })
-        .catch(error => {
-            console.error('Hubo un problema al obtener la información de la habilidad:', error);
-        });
+    .then(data => {
+        const campeon = data.data[palabraCapitalizada];
+        if (campeon) {
+            // Mostrar el lore del campeón en el cuadro de texto
+            document.getElementById('loreCampeon').innerText = campeon.lore;
+
+            // Obtener las habilidades del campeón
+            const lore = campeon.lore;
+            const habilidades = campeon.spells;
+            const passive = campeon.passive
+
+            // Asociar eventos de clic a los botones de habilidades
+            document.getElementsByClassName('imagenCampeon').onclick = function() {
+                cargarLore(lore);
+            };
+
+            document.getElementById('imagenPassive').onclick = function() {
+                mostrarHabilidad(passive);
+            };
+            document.getElementById('imagenQ').onclick = function() {
+                mostrarHabilidad(habilidades[0]);
+            };
+            document.getElementById('imagenW').onclick = function() {
+                mostrarHabilidad(habilidades[1]);
+            };
+            document.getElementById('imagenE').onclick = function() {
+                mostrarHabilidad(habilidades[2]);
+            };
+            document.getElementById('imagenR').onclick = function() {
+                mostrarHabilidad(habilidades[3]);
+            };
+        } else {
+            console.log('No se encontró información para el campeón:', palabraCapitalizada);
+        }
+    })
+    .catch(error => {
+        console.error('Hubo un problema al obtener la información del campeón:', error);
+    });
 }
 
-        // Asociar la función al evento clic de los botones de habilidades
-        document.getElementById("imagenPassive").addEventListener("click", function() {
-            obtenerInformacionHabilidad(palabraCapitalizada, "P");
-        });
+function mostrarHabilidad(habilidad) {
+    document.getElementById('nombreHabilidad').innerText = habilidad.name;
+    document.getElementById('descripcionHabilidad').innerText = habilidad.description;
+    document.getElementById('loreCampeon').style.display = "none";
+}
 
-        document.getElementById("imagenQ").addEventListener("click", function() {
-            obtenerInformacionHabilidad(palabraCapitalizada, "Q");
-        });
 
-        document.getElementById("imagenW").addEventListener("click", function() {
-            obtenerInformacionHabilidad(palabraCapitalizada, "W");
-        });
-
-        document.getElementById("imagenE").addEventListener("click", function() {
-            obtenerInformacionHabilidad(palabraCapitalizada, "E");
-        });
-
-        document.getElementById("imagenR").addEventListener("click", function() {
-            obtenerInformacionHabilidad(palabraCapitalizada, "R");
-        });
-
+function cargarContenido() {
+    // Llamar a las funciones necesarias al cargar la página
+    obtenerInformacionCampeon(nombreCampeon);
+    obtenerTextoCampeones(nombreCampeon)
+}
 // Llamar a la función para obtener y mostrar imágenes
 obtenerInformacionCampeon(nombreCampeon);

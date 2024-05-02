@@ -13,11 +13,10 @@
     <script src="default.js"></script>
 </head>
 
-<body>
+<body onload="cargarContenido()">
     <header class="header">
         <button class="header_letter" onclick="campeones()">Campeones</button>
         <button class="header_letter" onclick="main()">Inicio</button>
-        <button class="header_letter" onclick="invocadores()">Invocadores</button>
         <button class="header_letter" onclick="splashArts()">SplashArts</button>
     </header>
     <div class="container">
@@ -30,8 +29,9 @@
             <button id="imagenR">R</button>
         </div>
         <div class="habilityInf">
-            <h1 id="nombreHabilidad">Nombre de la habilidad</h1>
-            <h3 id="descripcionHabilidad">Descripción de la habilidad</h3>
+            <h3 id="loreCampeon"></h3>
+            <h1 id="nombreHabilidad"></h1>
+            <h3 id="descripcionHabilidad"></h3>
         </div>
     </div>
     <footer>
