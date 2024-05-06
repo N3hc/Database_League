@@ -1,6 +1,7 @@
 // Obtener el ID del botón desde la URL
 var urlParams = new URLSearchParams(window.location.search);
 var idBoton = urlParams.get('id');
+var campActual;
 
 // Mostrar el ID del botón
 let palabraCapitalizada = idBoton.charAt(0).toUpperCase() + idBoton.slice(1);
@@ -67,18 +68,18 @@ function obtenerTextoCampeones(palabraCapitalizada) {
     cargarJSON(url)
     .then(data => {
         const campeon = data.data[palabraCapitalizada];
+        campActual = campeon;
         if (campeon) {
             // Mostrar el lore del campeón en el cuadro de texto
             document.getElementById('loreCampeon').innerText = campeon.lore;
 
             // Obtener las habilidades del campeón
-            const lore = campeon.lore;
             const habilidades = campeon.spells;
             const passive = campeon.passive
 
             // Asociar eventos de clic a los botones de habilidades
             document.getElementsByClassName('imagenCampeon').onclick = function() {
-                cargarLore(lore);
+                cargarLore(campeon);
             };
 
             document.getElementById('imagenPassive').onclick = function() {
@@ -109,6 +110,11 @@ function mostrarHabilidad(habilidad) {
     document.getElementById('nombreHabilidad').innerText = habilidad.name;
     document.getElementById('descripcionHabilidad').innerText = habilidad.description;
     document.getElementById('loreCampeon').style.display = "none";
+}
+function cargarLore(){
+    document.getElementById('nombreHabilidad').innerText = " ";
+    //document.getElementById('descripcionHabilidad').style.display = "none";
+    document.getElementById('descripcionHabilidad').innerText = campActual.lore;
 }
 
 
