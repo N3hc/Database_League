@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -19,16 +20,18 @@
         <button class="header_letter" onclick="main()">Inicio</button>
         <button class="header_letter" onclick="splashArts()">SplashArts</button>
     </header>
-    <div class="contenedor_logo">
-    <img class="Logo" src="Logo.png" alt="Polla">
-    </div>
-    <div class="container">
-        <div class="box">
-            <h1 class=""> League of Legends Database </h1>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="background.mp4" type="video/webm">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="overlay">
+            <img class="Logo" src="Logo.png" alt="no Carga">
+            <button class="btn" onclick="playGame()">Jugar Gratis</button>
         </div>
     </div>
     <footer>
         <p id="i">&copy; LolDataBase</p>
     </footer>
-  </body>
+</body>
 </html>

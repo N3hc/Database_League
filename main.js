@@ -10,3 +10,6 @@ function invocadores() {
 function splashArts() {
     window.location.href = 'splashArts.html';
 };
+function playGame() {
+    window.location.href = "https://signup.leagueoflegends.com/";
+}
