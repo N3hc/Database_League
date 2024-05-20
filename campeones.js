@@ -35,3 +35,57 @@ $(document).ready(function(){
         } setTimeout(showAll, 400);
     });
 });
+
+function searchChampion() {
+    // Obtener el valor del input
+    var input = document.getElementById('searchInput').value.toLowerCase();
+    // Obtener todos los elementos de campeones
+    var champions = document.getElementsByClassName('character-border');
+    var found = false;
+
+    // Recorrer todos los campeones y mostrar solo los que coinciden con la búsqueda
+    for (var i = 0; i < champions.length; i++) {
+        var champion = champions[i];
+        if (champion.id.toLowerCase().includes(input)) {
+            champion.style.display = 'block';
+            champion.style.visibility = 'visible';
+            champion.classList.remove('oculto');
+            if (!found) {
+                // Centramos el campeón encontrado
+                champion.style.margin = 'auto';
+                found = true;
+            }
+        } else {
+            champion.style.display = 'none';
+            champion.style.visibility = 'hidden';
+            champion.classList.add('oculto');
+        }
+    }
+
+    // Ajustar la caja de campeones para centrar el campeón encontrado
+    var boxCampeones = document.getElementsByClassName('box_campeones')[0];
+    if (found) {
+        boxCampeones.style.justifyContent = 'center';
+    } else {
+        boxCampeones.style.justifyContent = 'center'; // Restablecer a la configuración predeterminada
+    }
+}
+
+function resetSearchStyles() {
+    // Obtener todos los elementos de campeones
+    var champions = document.getElementsByClassName('character-border');
+
+    // Recorrer todos los campeones y restablecer los estilos
+    for (var i = 0; i < champions.length; i++) {
+        var champion = champions[i];
+        champion.style.display = '';
+        champion.style.visibility = '';
+        champion.style.margin = '';
+        champion.classList.remove('oculto');
+    }
+
+    // Restablecer estilos de la caja de campeones
+    var boxCampeones = document.getElementsByClassName('box_campeones')[0];
+    boxCampeones.style.justifyContent = ''; // Restablecer a la configuración predeterminada
+}
+
