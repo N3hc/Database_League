@@ -1,3 +1,21 @@
+/* Clase para campeones encontrados */
+.champion-found {
+  display: block;
+  visibility: visible;
+  margin: auto;
+}
+
+/* Clase para campeones ocultos */
+.champion-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Ajuste para la caja de campeones */
+.box_campeones-centered {
+  justify-content: center;
+}
+
 .character-border {
   width: 190px;
   height: 190px;

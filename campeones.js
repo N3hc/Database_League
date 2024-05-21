@@ -47,45 +47,43 @@ function searchChampion() {
     for (var i = 0; i < champions.length; i++) {
         var champion = champions[i];
         if (champion.id.toLowerCase().includes(input)) {
-            champion.style.display = 'block';
-            champion.style.visibility = 'visible';
-            champion.classList.remove('oculto');
+            champion.classList.add('champion-found');
+            champion.classList.remove('champion-hidden');
             if (!found) {
                 // Centramos el campeón encontrado
                 champion.style.margin = 'auto';
                 found = true;
+            } else {
+                champion.style.margin = '';
             }
         } else {
-            champion.style.display = 'none';
-            champion.style.visibility = 'hidden';
-            champion.classList.add('oculto');
+            champion.classList.add('champion-hidden');
+            champion.classList.remove('champion-found');
         }
     }
 
     // Ajustar la caja de campeones para centrar el campeón encontrado
     var boxCampeones = document.getElementsByClassName('box_campeones')[0];
     if (found) {
-        boxCampeones.style.justifyContent = 'center';
+        boxCampeones.classList.add('box_campeones-centered');
     } else {
-        boxCampeones.style.justifyContent = 'center'; // Restablecer a la configuración predeterminada
+        boxCampeones.classList.remove('box_campeones-centered');
     }
 }
-
-function resetSearchStyles() {
+function resetChampions() {
     // Obtener todos los elementos de campeones
     var champions = document.getElementsByClassName('character-border');
 
-    // Recorrer todos los campeones y restablecer los estilos
+    // Recorrer todos los campeones y restablecer su visibilidad
     for (var i = 0; i < champions.length; i++) {
         var champion = champions[i];
+        champion.classList.remove('champion-found', 'champion-hidden');
         champion.style.display = '';
         champion.style.visibility = '';
         champion.style.margin = '';
-        champion.classList.remove('oculto');
     }
 
-    // Restablecer estilos de la caja de campeones
+    // Restablecer la configuración de la caja de campeones
     var boxCampeones = document.getElementsByClassName('box_campeones')[0];
-    boxCampeones.style.justifyContent = ''; // Restablecer a la configuración predeterminada
+    boxCampeones.classList.remove('box_campeones-centered');
 }
-
